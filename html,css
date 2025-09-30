@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High-Fidelity UI</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* ---------- Global Styles ---------- */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #F9FAFB;
+      color: #111827;
+    }
+    h1,h2,h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- Navbar ---------- */
+    .navbar {
+      background-color: #4F46E5;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .navbar h2 { margin: 0; }
+    .navbar a {
+      margin-left: 20px;
+      font-weight: 500;
+      color: white;
+    }
+    .navbar a:hover {
+      color: #F59E0B;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      background: linear-gradient(135deg, #4F46E5, #6366F1);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 0 0 20px 20px;
+    }
+    .hero h1 { font-size: 3rem; margin-bottom: 20px; }
+    .hero p { font-size: 1.3rem; margin-bottom: 30px; }
+
+    /* ---------- Button ---------- */
+    .btn {
+      background-color: #F59E0B;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover { background-color: #D97706; }
+
+    /* ---------- Container ---------- */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* ---------- Cards ---------- */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 15px;
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .card h3 { margin-bottom: 10px; }
+    .card p { color: #6B7280; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background-color: #111827;
+      color: #F9FAFB;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2>MyApp</h2>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to MyApp</h1>
+    <p>Discover, order, and enjoy your favorite services with ease!</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container">
+    <h2 style="text-align:center; margin-bottom:40px;">Our Features</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x250/?food" alt="Food">
+        <h3>Fast Delivery</h3>
+        <p>Get your orders delivered quickly with live tracking.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x250/?shopping" alt="Shopping">
+        <h3>Easy Shopping</h3>
+        <p>Shop for your needs with a simple, user-friendly interface.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x250/?education" alt="Learning">
+        <h3>Learn Anywhere</h3>
+        <p>Access courses and tutorials anytime, anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyApp. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+     
